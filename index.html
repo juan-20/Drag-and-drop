@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador</title>
+    <link rel="stylesheet" href="css/lista.css">
+    <script src="js/drag.js" defer></script>
+    <!-- o defer faz o js ser lido depois da execução -->
+</head>
+<body>
+    <div class="quadros">
+    <div class="board">
+        <h3>A pagar  <span><button class="add" onclick="addcart">+</button></span></h3>
+        <div class="dropzone">
+            <div class="card" draggable="true"  >
+                <div class="status azul"></div>
+                <div class="cont">extra</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="board">
+        <h3>Pagando <span><button class="add" onclick="addcart">+</button></span> </h3>
+        <div class="dropzone">
+            <div class="card" draggable="true">
+                <div class="status verde"></div>
+                <div class="cont">Agiota</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="board">
+        <h3>Pago  <span><button class="add" onclick="addcart">+</button></span></h3>
+        <div class="dropzone">
+            <div class="card vermelho" draggable="true">
+                <div class="status"></div>
+                <div class="cont">Americanas</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <p style="top: 90%;">Em desenvolvimento. Posteriormente o botão irá adicionar um novo cartão e o cartão poderá ser alterado.</p>
+</body>
+</html>

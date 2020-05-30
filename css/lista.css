@@ -1,0 +1,99 @@
+/* global: */
+html{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #262626;
+    color: white;
+}
+
+/* quadros: */
+.quadros{
+    margin-top: 35px;
+    /* alinhar um do lado do outro */
+      display: flex;
+      justify-content: space-between;
+}
+
+.board{
+    background-color: #474747;
+    border: 1px solid #fff;
+    border-radius: 15px;
+ /* margem entre os card */
+    margin: 0 10px;
+}
+
+.board h3{
+    /* arrumar o titulo */
+    padding: 16px;
+    margin: 0;
+    color: #ffbe45;
+}
+
+.dropzone{
+    /* tamanho e texto interno */
+    padding: 16px;
+    min-width: 200px;
+    min-height: 430 px;
+    text-align: center;
+}
+
+.card{
+    /* tamanho do negocio de arrastar, fonte e borda */
+    box-shadow: 0px 2px #ffbe45;
+    width: 200px;
+    height: 100px;
+    margin: 25px 0px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.status{
+    width: 30px;
+    height: 8px;
+    margin-bottom: 16px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.status.verde{
+    background-color: #008f20;
+}
+
+.status.vermelho{
+    background-color: red;
+}
+.status.azul{
+    background-color: blue;
+}
+
+.add{
+    outline: none;
+    background: none;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #ffbe45;
+    
+}
+
+.evidencia{
+    background-color: #278f3ecc;
+    border-radius: 15px;
+}
+
+.card, .dropzone{
+    transition: 480ms;
+}
+
+/* CSS para o JS: */
+
+.carregando{
+    cursor: move;
+    opacity: 0.3;
+}
+
+.over{
+    background-color: #3a669ccc;
+}
